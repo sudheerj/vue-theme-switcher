@@ -4,7 +4,10 @@
 
 ## Setup
 
-````javascript
+```javascript
     npm install
     npm run dev
 ```
+## Demo
+
+<img src="https://github.com/sudheerj/vue-theme-switcher/blob/master/images/theme-switcher.png" width="400" height="500">
