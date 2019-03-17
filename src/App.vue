@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <custom-header>VueJS Theme Switcher</custom-header>
-    <theme-picker>Change Theme:<el-color-picker :value="themeColor" @change="setThemeColor"></el-color-picker></theme-picker>
+    <custom-header>VueJS Theme Switcher<theme-picker><span>Change Theme: </span><el-color-picker :value="themeColor" @change="setThemeColor"></el-color-picker></theme-picker></custom-header>
+
     <wrapper>
       <custom-title>Welcome to VueJS Styled Components</custom-title>
       <img src="./assets/logo.png" height="100px">
       <el-form ref="form" label-width="100px">
         <el-form-item label="Username">
-          <el-input placeholder="Enter UserName" :value="username" size="mini" @change="setUsername($event.target.value)"></el-input>
+          <el-input placeholder="Enter UserName" :value="username" size="mini" @input="setUsername"></el-input>
       </el-form-item>
         <el-form-item label="Password">
-          <el-input placeholder="Enter Password" :value="password" size="mini" @change="setPassword($event.target.value)"></el-input>
+          <el-input placeholder="Enter Password" :value="password" size="mini" @input="setPassword"></el-input>
         </el-form-item>
       </el-form>
       <custom-button>Login</custom-button>
@@ -37,7 +37,7 @@ export default {
       'setThemeColor',
       'setUsername',
       'setPassword'
-    ]),
+    ])
   },
 }
 
@@ -46,7 +46,7 @@ injectGlobal`
       body {
           font-family: 'Avenir', Helvetica, Arial, sans-serif;
           text-align: center;
-          margin-top: 30px;
+          margin: 0px;
       }
     `;
 </script>
