@@ -13,9 +13,9 @@
           <el-input placeholder="Enter Password" :value="password" size="mini" @input="setPassword"></el-input>
         </el-form-item>
       </el-form>
-      <custom-button>Login</custom-button>
+      <custom-button @click.native="redirectToPage">Login</custom-button>
     </wrapper>
-    <custom-footer>Copyright by Sudheer Jonna</custom-footer>
+    <custom-footer>Copyright@2019</custom-footer>
   </div>
 </template>
 
@@ -37,7 +37,10 @@ export default {
       'setThemeColor',
       'setUsername',
       'setPassword'
-    ])
+    ]),
+    redirectToPage: () => {
+      window.location.href='https://github.com/styled-components/vue-styled-components';
+    }
   },
 }
 
