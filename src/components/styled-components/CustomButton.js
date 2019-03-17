@@ -10,6 +10,10 @@ const CustomButton = styled('button', themeProps)`
   margin-top: 2em;
   margin-left: 30em;
   border-radius: 25px;
+  &:hover {
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+    background-color: green;
+  }
 `;
 
 export default CustomButton;

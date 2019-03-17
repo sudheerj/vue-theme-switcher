@@ -10,7 +10,7 @@ const Wrapper = styled('div', customProps)`
   border-radius: 25px;
   border: 2px solid #73AD21;
   width: 500px;
-  height: 300px; 
+  height: 350px; 
 `;
 
 export default Wrapper;

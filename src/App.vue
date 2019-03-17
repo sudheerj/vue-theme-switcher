@@ -5,9 +5,15 @@
     <wrapper>
       <custom-title>Welcome to VueJS Styled Components</custom-title>
       <img src="./assets/logo.png" height="100px">
-      <el-input placeholder="Enter UserName" :value="username" size="mini" @change="setUsername($event.target.value)"></el-input>
-      <el-input placeholder="Enter Password" :value="password" size="mini" @change="setPassword($event.target.value)"></el-input>
-      <custom-button>Submit</custom-button>
+      <el-form ref="form" label-width="100px">
+        <el-form-item label="Username">
+          <el-input placeholder="Enter UserName" :value="username" size="mini" @change="setUsername($event.target.value)"></el-input>
+      </el-form-item>
+        <el-form-item label="Password">
+          <el-input placeholder="Enter Password" :value="password" size="mini" @change="setPassword($event.target.value)"></el-input>
+        </el-form-item>
+      </el-form>
+      <custom-button>Login</custom-button>
     </wrapper>
     <custom-footer>Copyright by Sudheer Jonna</custom-footer>
   </div>
